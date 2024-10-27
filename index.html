@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+    <html>
+	<head>
+	    <title>Formulario</title>
+	</head>
+	<body>
+	    <h1>Formulario</h1>
+	    <form>
+		<fieldset>
+		   <legend>Controles</legend>
+		   <p>
+		   	<label>Esta es una etiqueta</label>
+   		   	<input type="text" id="txtCampoTexto" value="Aqui ingresa el texto" />
+		   </p>
+		   <p>
+			<label>Area texto</label>
+			<textarea id="txtarea" rows="4" cols="60"></textarea>
+		   </p>
+		   <p>
+			<label>Contraseña</label>
+			<input type="password" id="txtpwd" value="contraseña" />
+		   </p>
+		</fieldset>
+		<fieldset>
+		    <legend>Controles de seleccion</legend>
+		    <p>
+			Su color favorito (combobox)
+			<select name="color1">
+			    <option>Azul</option>
+			    <option>Amarillo</option>
+			    <option>Naranja</option>
+			</select>
+
+			Su color favorito (Lista)
+			<select name="color2" size="1">
+			    <option>Azul</option>
+			    <option>Amarillo</option>
+			    <option>Naranja</option>
+			</select>
+
+
+			Su color favorito (selección multiple)
+			<select name="color3" size="3" multiple>
+			    <option>Azul</option>
+			    <option>Amarillo</option>
+			    <option>Naranja</option>
+			</select>
+		    </p>	
+		    <p>
+			Lista de boton de radio:
+			<input type="radio"
+			    id="azul"	
+			    name="color"
+			    value="1" />
+			<label for="azul">Azul</label>	
+
+			<input type="radio"
+			    id="amarillo"
+			    name="color"
+			    value="2" />
+			<label for="amarillo">Amarillo</label>
+
+			<input type="radio"
+			    id="naranja"
+			    name="color"
+			    value="3" />
+			<label for="naranja">Naranja</label>			    
+		    </p>
+
+		    <p>
+			Lista de chequeo (checkbox)
+			<input type="checkbox"
+			    id="azul"
+			    name""color_azul"
+			    value="1" />
+			<label for="azul">Azul</label>
+			<input type="checkbox"
+			    id="amarillo"
+			    name="color_amarillo"
+			    value="2" />
+			<lable for="amarillo">Amarillo</label>
+			<input type="checkbox"
+			    id="naranja"
+			    name="color_naranja"
+			    value="3" />
+			<lable for="naranja">Naranja</label>
+		    </p>
+
+		</fieldset>
+
+		<fieldset>
+		    <legend>botones</legend>
+		    <p>
+			<input type="submit"
+			    id="envia"
+			    value="Enviar informacion" />
+
+			<input type="reset"
+			    id="reset"
+			    value="Borrar informacion" />
+
+
+			<input type="button"
+			    id="boton"
+			    value="Boton" />
+
+		    </p>
+		</fieldset>
+		<fieldset>
+		    <legend>Otros componentes<legend>
+		    <p>
+			<label>Imagen</label>
+			    <input type="image"
+				src="boton.jpg"
+				alt="imagen como boton " />
+			<label>&nbsp;&nbsp;&nbsp;Control oculto</label>
+			    <input type="hidden"
+				   id="oculto"
+				   value="Borrar información" />
+		    </p>
+		</field>
+            </form>
+	</body>
+    
